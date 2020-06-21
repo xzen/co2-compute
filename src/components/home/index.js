@@ -1,8 +1,19 @@
 import React from 'react';
 
+import dataYaml from './data/data.yaml';
+
+const Item = ({ titre, moyenne }) => (
+  <div>
+    <span>{titre}</span>
+    <span>{moyenne}</span>
+  </div>
+);
+
 const Home = () => (
   <div>
-    <h1>Hello World</h1>
+    {dataYaml.extraUrbains.map((transport) => (
+      <Item key={transport.titre} titre={transport.titre} moyenne={transport.moyenne} />
+    ))}
   </div>
 );
 

@@ -28,7 +28,6 @@ module.exports = {
             }
           ]
       },
-
       {
         test: /\.(sc|sa|c)ss$/,
         use: [
@@ -36,6 +35,11 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.ya?ml$/,
+        type: 'json',
+        use: 'yaml-loader'
       }
     ]
   },
