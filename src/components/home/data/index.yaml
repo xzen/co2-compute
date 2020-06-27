@@ -1,0 +1,33 @@
+extraUrbains:
+  - titre: avion
+    icones: ✈️
+    moyenne: 300
+    gCO2e/km/personne: 1
+    note: Sur ce lien, filtrer les résultats par l'unité "kgCO2e /passager.km".
+    source: https://www.bilans-ges.ademe.fr/fr/basecarbone/donnees-consulter/liste-element?recherche=Avion
+  - titre: TGV
+    icones: 🚄
+    moyenne: 100
+    gCO2e/km/personne: 1
+    source: https://www.oui.sncf/aide/calcul-des-emissions-de-co2-sur-votre-trajet-en-train
+  - titre: Trains grandes lignes
+    icones: 🚈
+    moyenne: 200
+    gCO2e/km/personne: 1
+    source: https://www.oui.sncf/aide/calcul-des-emissions-de-co2-sur-votre-trajet-en-train
+  - titre: voiture thermique
+    icones: 🚗
+    moyenne: 130
+    gCO2e/km/personne: 1
+    voyageurs: 2.4
+    note: Calculs ADEME, base Comptes des transports CGDD (2019) ; hypothèse 2,4 passagers/voiture
+  - titre: vélo
+    icones: 🚴
+    moyenne: 24000
+    gCO2e/km/personne: 1
+    note: L'impact du vélo est ici considéré comme négligeable.
+  - titre: bus thermique
+    icones: 🚌
+    moyenne: 100
+    gCO2e/km/personne: 1
+    note: Calculs ADEME à partir d'HBEFA (2020). Notons que les bus ne transportent en moyenne pas plus de 10 personnes. Prendre le bus, c'est augmenter les taux de remplissage et donc améliorer le bilan de ce moyen de transport !
